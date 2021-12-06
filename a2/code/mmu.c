@@ -78,7 +78,6 @@ int main(int argc, char *argv[])
 
                 // If frame is availble in Memory
                 int availFrameNo = getAvailableFrameNo();
-
                 
                 if (availFrameNo < TOTAL_FRAMES)
                 {
@@ -86,8 +85,6 @@ int main(int argc, char *argv[])
                     updateMEMData(BACKING_DATA, is256);
                     updateFramePT(localPageNo);
                     updateTimePT(localPageNo, total);
-
-                   
                 }               
                 // Else if frame is not available in Memory
                 else
